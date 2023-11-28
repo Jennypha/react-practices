@@ -1,8 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Trainer from './components/trainer';
-import Trainee from './components/Trainee';
+import Friend from './components/Friend';
+
+import friends from './Data/friends.json';
+
+
 function App() {
+  console.log("Friends:", friends);
+  
+
+  const friendsComponents = [];
+
+  for (const friend of friends) {
+    console.log("friend:", friend);
+    friendsComponents.push(
+    <Friend name={friend.name} age={friend.age} sex={friend.sex}/>
+    );
+    
+  }
+  
   return (
     <div>
     <h1>To do list</h1>
@@ -14,13 +30,8 @@ function App() {
     <a href='https://google.com'>google website</a>
      <h2>Forms</h2>
      
-     <p>hello world</p>
-     <Trainer name="Jenny" age="29" sex="Female"/>
-     <Trainer name="Joe" age="34" sex="Male"/>
-     <Trainer name="Jude" age="39" sex="Male"/>
-     <Trainee />
-
-    <input/>
+     (friendsComponents)
+    
     </div>
   );
 }

@@ -1,5 +1,5 @@
 //components names must be capitalised
-function Trainer(props) {
+function Friend(props) {
     //components return html
     console.log("Props:", props);
     console.log("Name:", props.name);
@@ -8,10 +8,10 @@ function Trainer(props) {
     return (
     <div>
         <p> Name: {props.name}</p>
-        <p>Age: {props.age}29</p>
+        <p>Age: {props.age}</p>
         <p>Sex: {props.sex}</p>
     </div>
     );
 }
 
-export default Trainer;
+export default Friend;
