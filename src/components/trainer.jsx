@@ -1,15 +1,15 @@
-
-
-
 //components names must be capitalised
-function Trainer() {
+function Trainer(props) {
     //components return html
-
+    console.log("Props:", props);
+    console.log("Name:", props.name);
+    console.log("Age:", props.age);
+    console.log("Sex:", props.sex);
     return (
     <div>
-        <p> Name: Jenny</p>
-        <p>Age: 29</p>
-        <p>Sex: female</p>
+        <p> Name: {props.name}</p>
+        <p>Age: {props.age}29</p>
+        <p>Sex: {props.sex}</p>
     </div>
     );
 }

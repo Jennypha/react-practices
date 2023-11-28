@@ -15,7 +15,9 @@ function App() {
      <h2>Forms</h2>
      
      <p>hello world</p>
-     <Trainer />
+     <Trainer name="Jenny" age="29" sex="Female"/>
+     <Trainer name="Joe" age="34" sex="Male"/>
+     <Trainer name="Jude" age="39" sex="Male"/>
      <Trainee />
 
     <input/>
